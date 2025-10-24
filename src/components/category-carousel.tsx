@@ -10,6 +10,7 @@ import {
   Laptop,
   ChevronLeft,
   ChevronRight,
+  Refrigerator,
 } from "lucide-react";
 import type { Category } from "@/lib/types";
 import { cn } from "@/lib/utils";
@@ -23,6 +24,7 @@ const categories: Category[] = [
   { name: "Coque personnalisée", icon: Palette, gradient: "from-pink-400 to-pink-600" },
   { name: "Enceinte", icon: Speaker, gradient: "from-purple-400 to-purple-600" },
   { name: "PC", icon: Laptop, gradient: "from-indigo-400 to-indigo-600" },
+  { name: "Electroménager", icon: Refrigerator, gradient: "from-gray-400 to-gray-600" },
 ];
 
 export function CategoryCarousel() {
