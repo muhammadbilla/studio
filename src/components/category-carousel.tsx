@@ -2,30 +2,14 @@
 
 import * as React from 'react';
 import {
-  Smartphone,
-  Headphones,
-  Cable,
-  Palette,
-  Speaker,
-  Laptop,
   ChevronLeft,
   ChevronRight,
-  Refrigerator,
 } from "lucide-react";
+import Link from 'next/link';
 import type { Category } from "@/lib/types";
-import { cn } from "@/lib/utils";
+import { cn, slugify } from "@/lib/utils";
 import { Button } from './ui/button';
-
-const categories: Category[] = [
-  { name: "Téléphone", icon: Smartphone, gradient: "from-green-400 to-green-600" },
-  { name: "Airpod", icon: Headphones, gradient: "from-blue-400 to-blue-600" },
-  { name: "Câble", icon: Cable, gradient: "from-yellow-400 to-yellow-600" },
-  { name: "Coque de téléphone", icon: Smartphone, gradient: "from-red-400 to-red-600" },
-  { name: "Coque personnalisée", icon: Palette, gradient: "from-pink-400 to-pink-600" },
-  { name: "Enceinte", icon: Speaker, gradient: "from-purple-400 to-purple-600" },
-  { name: "PC", icon: Laptop, gradient: "from-indigo-400 to-indigo-600" },
-  { name: "Electroménager", icon: Refrigerator, gradient: "from-gray-400 to-gray-600" },
-];
+import { categories } from '@/lib/categories';
 
 export function CategoryCarousel() {
   const scrollContainerRef = React.useRef<HTMLDivElement>(null);
@@ -60,7 +44,7 @@ export function CategoryCarousel() {
             className="flex gap-4 md:gap-6 overflow-x-auto pb-4 scrollbar-hide snap-x snap-mandatory scroll-smooth px-4 lg:px-0"
           >
             {categories.map((category) => (
-              <div key={category.name} className="flex-shrink-0 snap-center">
+              <Link key={category.name} href={`/category/${slugify(category.name)}`} className="flex-shrink-0 snap-center">
                 <div className="flex flex-col items-center group">
                   <div
                     className={cn(
@@ -74,7 +58,7 @@ export function CategoryCarousel() {
                     {category.name}
                   </span>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
           <Button
