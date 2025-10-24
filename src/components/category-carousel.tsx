@@ -1,0 +1,91 @@
+"use client"
+
+import * as React from 'react';
+import {
+  Laptop,
+  Smartphone,
+  Gamepad2,
+  Tv,
+  Camera,
+  Watch,
+  Home,
+  ChevronLeft,
+  ChevronRight,
+} from "lucide-react";
+import type { Category } from "@/lib/types";
+import { cn } from "@/lib/utils";
+import { Button } from './ui/button';
+
+const categories: Category[] = [
+  { name: "Informatique", icon: Laptop, gradient: "from-blue-400 to-blue-600" },
+  { name: "Téléphonie", icon: Smartphone, gradient: "from-green-400 to-green-600" },
+  { name: "Gaming", icon: Gamepad2, gradient: "from-red-400 to-red-600" },
+  { name: "Image & Son", icon: Tv, gradient: "from-purple-400 to-purple-600" },
+  { name: "Photo & Vidéo", icon: Camera, gradient: "from-pink-400 to-pink-600" },
+  { name: "Wearables", icon: Watch, gradient: "from-yellow-400 to-yellow-600" },
+  { name: "Maison Connectée", icon: Home, gradient: "from-indigo-400 to-indigo-600" },
+];
+
+export function CategoryCarousel() {
+  const scrollContainerRef = React.useRef<HTMLDivElement>(null);
+
+  const scroll = (direction: 'left' | 'right') => {
+    if (scrollContainerRef.current) {
+      const scrollAmount = 300;
+      scrollContainerRef.current.scrollBy({
+        left: direction === 'left' ? -scrollAmount : scrollAmount,
+        behavior: 'smooth',
+      });
+    }
+  };
+
+  return (
+    <section className="py-12 bg-card">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl font-bold font-headline text-center text-foreground mb-8">
+          Nos Catégories
+        </h2>
+        <div className="relative">
+          <Button
+            variant="outline"
+            size="icon"
+            className="hidden lg:flex absolute left-0 top-1/2 -translate-y-1/2 z-10 rounded-full w-12 h-12 bg-card/80 hover:bg-card"
+            onClick={() => scroll('left')}
+          >
+            <ChevronLeft className="h-6 w-6" />
+          </Button>
+          <div
+            ref={scrollContainerRef}
+            className="flex gap-4 md:gap-6 overflow-x-auto pb-4 scrollbar-hide snap-x snap-mandatory scroll-smooth px-4 lg:px-0"
+          >
+            {categories.map((category) => (
+              <div key={category.name} className="flex-shrink-0 snap-center">
+                <div className="flex flex-col items-center group">
+                  <div
+                    className={cn(
+                      "w-28 h-28 rounded-full flex items-center justify-center bg-gradient-to-br shadow-lg transition-all duration-300 ease-in-out group-hover:scale-110 group-hover:shadow-xl",
+                      category.gradient
+                    )}
+                  >
+                    <category.icon className="text-white h-12 w-12" />
+                  </div>
+                  <span className="text-foreground text-sm font-semibold mt-4 text-center">
+                    {category.name}
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
+          <Button
+             variant="outline"
+             size="icon"
+             className="hidden lg:flex absolute right-0 top-1/2 -translate-y-1/2 z-10 rounded-full w-12 h-12 bg-card/80 hover:bg-card"
+            onClick={() => scroll('right')}
+          >
+            <ChevronRight className="h-6 w-6" />
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
+}
