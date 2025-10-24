@@ -2,13 +2,12 @@
 
 import * as React from 'react';
 import {
-  Laptop,
   Smartphone,
-  Gamepad2,
-  Tv,
-  Camera,
-  Watch,
-  Home,
+  Headphones,
+  Cable,
+  Palette,
+  Speaker,
+  Laptop,
   ChevronLeft,
   ChevronRight,
 } from "lucide-react";
@@ -17,13 +16,13 @@ import { cn } from "@/lib/utils";
 import { Button } from './ui/button';
 
 const categories: Category[] = [
-  { name: "Informatique", icon: Laptop, gradient: "from-blue-400 to-blue-600" },
-  { name: "Téléphonie", icon: Smartphone, gradient: "from-green-400 to-green-600" },
-  { name: "Gaming", icon: Gamepad2, gradient: "from-red-400 to-red-600" },
-  { name: "Image & Son", icon: Tv, gradient: "from-purple-400 to-purple-600" },
-  { name: "Photo & Vidéo", icon: Camera, gradient: "from-pink-400 to-pink-600" },
-  { name: "Wearables", icon: Watch, gradient: "from-yellow-400 to-yellow-600" },
-  { name: "Maison Connectée", icon: Home, gradient: "from-indigo-400 to-indigo-600" },
+  { name: "Téléphone", icon: Smartphone, gradient: "from-green-400 to-green-600" },
+  { name: "Airpod", icon: Headphones, gradient: "from-blue-400 to-blue-600" },
+  { name: "Câble", icon: Cable, gradient: "from-yellow-400 to-yellow-600" },
+  { name: "Coque de téléphone", icon: Smartphone, gradient: "from-red-400 to-red-600" },
+  { name: "Coque personnalisée", icon: Palette, gradient: "from-pink-400 to-pink-600" },
+  { name: "Enceinte", icon: Speaker, gradient: "from-purple-400 to-purple-600" },
+  { name: "PC", icon: Laptop, gradient: "from-indigo-400 to-indigo-600" },
 ];
 
 export function CategoryCarousel() {
@@ -69,7 +68,7 @@ export function CategoryCarousel() {
                   >
                     <category.icon className="text-white h-12 w-12" />
                   </div>
-                  <span className="text-foreground text-sm font-semibold mt-4 text-center">
+                  <span className="text-foreground text-sm font-semibold mt-4 text-center w-28">
                     {category.name}
                   </span>
                 </div>
