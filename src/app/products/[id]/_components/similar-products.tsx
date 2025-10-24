@@ -1,8 +1,6 @@
 import { products } from '@/lib/products';
 import { ProductCard } from '@/components/product-card';
 import type { Product } from '@/lib/types';
-import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
-import { Terminal } from 'lucide-react';
 
 export async function SimilarProducts({ category, currentProductId }: { category: Product['category'], currentProductId: string }) {
   const similarProducts = products
