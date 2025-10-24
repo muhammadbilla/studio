@@ -20,6 +20,7 @@ export const products: Product[] = [
     ],
     warranty: "Garantie 3 mois",
     delivery: "Livraison rapide",
+    badge: "Prix imbattable",
   },
   {
     id: "34",
@@ -31,7 +32,7 @@ export const products: Product[] = [
     rating: 4.8,
     likes: 350,
     stock: "En stock",
-    badge: "Populaire",
+    badge: "Prix imbattable",
     imageIds: ["product-34"],
     specs: [
         "Réduction de bruit active",
@@ -61,6 +62,7 @@ export const products: Product[] = [
     ],
     warranty: "Garantie 3 mois",
     delivery: "Livraison rapide",
+    badge: "Prix imbattable",
   },
   {
     id: "36",
@@ -81,6 +83,7 @@ export const products: Product[] = [
     ],
     warranty: "Garantie 6 mois",
     delivery: "Livraison rapide",
+    badge: "Prix imbattable",
   },
   {
     id: "2",
@@ -103,7 +106,7 @@ export const products: Product[] = [
       "USB-C avec USB 3"
     ],
     warranty: "Garantie Apple 1 an",
-    delivery: "Livraison gratuite sous 24-48h"
+    delivery: "Livraison rapide"
   },
   {
     id: "5",

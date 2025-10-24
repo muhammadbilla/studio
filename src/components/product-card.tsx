@@ -4,6 +4,7 @@ import type { Product } from "@/lib/types";
 import { Star, StarHalf } from "lucide-react";
 import { getImageById } from "@/lib/placeholder-images";
 import { cn } from "@/lib/utils";
+import { Badge } from "@/components/ui/badge";
 
 function Rating({ rating }: { rating: number }) {
   const fullStars = Math.floor(rating);
@@ -26,6 +27,11 @@ export function ProductCard({ product }: { product: Product }) {
   return (
     <Link href={`/products/${product.id}`} className="block bg-white border border-gray-200 rounded-md p-2 hover:shadow-lg transition-shadow duration-200">
       <div className="relative aspect-square w-full">
+         {product.badge && (
+          <Badge className="absolute top-2 left-2 z-10 bg-accent text-accent-foreground">
+            {product.badge}
+          </Badge>
+        )}
         <Image
           src={image.imageUrl}
           alt={image.description}
