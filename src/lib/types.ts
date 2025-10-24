@@ -5,7 +5,7 @@ export type Product = {
   name: string;
   description: string;
   fullDescription: string;
-  category: 'Informatique' | 'Téléphonie' | 'Gaming' | 'Image & Son' | 'Photo & Vidéo' | 'Wearables' | 'Maison connectée' | 'Airpod' | 'Câble' | 'Coque de téléphone' | 'Coque personnalisée' | 'Enceinte' | 'PC' | 'Electroménager';
+  category: string;
   price: number;
   originalPrice?: number;
   rating: number;
