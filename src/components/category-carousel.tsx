@@ -11,24 +11,64 @@ import {
   Speaker,
   Laptop,
   Refrigerator,
+  Monitor,
+  Gamepad2,
+  Tv,
+  Camera,
+  Watch,
+  Home,
 } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 import Link from 'next/link';
 import { cn, slugify } from "@/lib/utils";
 import { Button } from './ui/button';
+import { products } from '@/lib/products';
 
-const categories = [
-    { name: "Téléphonie", icon: Smartphone, gradient: "from-sky-400 to-sky-600" },
-    { name: "Airpod", icon: Headphones, gradient: "from-blue-400 to-blue-600" },
-    { name: "Câble", icon: Cable, gradient: "from-yellow-400 to-yellow-600" },
-    { name: "Coque de téléphone", icon: Smartphone, gradient: "from-red-400 to-red-600" },
-    { name: "Coque personnalisée", icon: Palette, gradient: "from-pink-400 to-pink-600" },
-    { name: "Enceinte", icon: Speaker, gradient: "from-purple-400 to-purple-600" },
-    { name: "PC", icon: Laptop, gradient: "from-indigo-400 to-indigo-600" },
-    { name: "Electroménager", icon: Refrigerator, gradient: "from-gray-400 to-gray-600" },
-];
+const iconMap: Record<string, LucideIcon> = {
+    "Téléphonie": Smartphone,
+    "Airpod": Headphones,
+    "Câble": Cable,
+    "Coque de téléphone": Smartphone,
+    "Coque personnalisée": Palette,
+    "Enceinte": Speaker,
+    "PC": Laptop,
+    "Electroménager": Refrigerator,
+    "Informatique": Monitor,
+    "Gaming": Gamepad2,
+    "Image & Son": Tv,
+    "Photo & Vidéo": Camera,
+    "Wearables": Watch,
+    "Maison connectée": Home,
+};
+
+const categoryGradients: Record<string, string> = {
+    "Téléphonie": "from-sky-400 to-sky-600",
+    "Airpod": "from-blue-400 to-blue-600",
+    "Câble": "from-yellow-400 to-yellow-600",
+    "Coque de téléphone": "from-red-400 to-red-600",
+    "Coque personnalisée": "from-pink-400 to-pink-600",
+    "Enceinte": "from-purple-400 to-purple-600",
+    "PC": "from-indigo-400 to-indigo-600",
+    "Electroménager": "from-gray-400 to-gray-600",
+    "Informatique": "from-green-400 to-green-600",
+    "Gaming": "from-red-500 to-red-700",
+    "Image & Son": "from-orange-400 to-orange-600",
+    "Wearables": "from-teal-400 to-teal-600",
+    "default": "from-gray-400 to-gray-600",
+};
+
 
 export function CategoryCarousel() {
   const scrollContainerRef = React.useRef<HTMLDivElement>(null);
+
+  const categories = React.useMemo(() => {
+    const uniqueCategories = [...new Set(products.map(p => p.category))];
+    return uniqueCategories.map(name => ({
+      name,
+      icon: iconMap[name] || Smartphone,
+      gradient: categoryGradients[name] || categoryGradients.default
+    }));
+  }, []);
 
   const scroll = (direction: 'left' | 'right') => {
     if (scrollContainerRef.current) {
