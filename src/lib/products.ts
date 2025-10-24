@@ -83,6 +83,29 @@ export const products: Product[] = [
     delivery: "Livraison rapide",
   },
   {
+    id: "2",
+    name: "iPhone 15 Pro Max",
+    description: "Le summum de la technologie Apple.",
+    fullDescription: "L'iPhone 15 Pro Max, forgé en titane, est doté de la puce A17 Pro, d'un bouton Action personnalisable et du système photo le plus puissant jamais vu sur iPhone.",
+    category: "Téléphonie",
+    price: 950000,
+    originalPrice: 1050000,
+    rating: 4.9,
+    likes: 245,
+    stock: "En stock",
+    badge: "Nouveau",
+    imageIds: ["product-2"],
+    specs: [
+      "Écran Super Retina XDR 6.7\"",
+      "Puce A17 Pro",
+      "Système photo pro 48 Mpx",
+      "Dynamic Island",
+      "USB-C avec USB 3"
+    ],
+    warranty: "Garantie Apple 1 an",
+    delivery: "Livraison gratuite sous 24-48h"
+  },
+  {
     id: "5",
     name: "Apple Watch Series 9 GPS 45mm",
     description: "Écran AMOLED, GPS, Résistant eau",
