@@ -40,7 +40,7 @@ export function ProductCard({ product }: { product: Product }) {
         </h3>
         <Rating rating={product.rating} />
         <p className="text-lg font-bold text-red-600 mt-1">
-          {product.price.toLocaleString('fr-FR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} €
+          {product.price.toLocaleString('fr-FR')} FCFA
         </p>
       </div>
     </Link>
