@@ -95,17 +95,6 @@ export function ProductDetails({ product }: { product: Product }) {
             </div>
           </div>
         </div>
-        
-        <Separator />
-        
-        <div>
-          <h3 className="text-xl font-bold font-headline mb-4">Spécifications</h3>
-          <ul className="space-y-2 text-foreground/80 list-disc list-inside">
-            {product.specs.map((spec, index) => (
-              <li key={index}>{spec}</li>
-            ))}
-          </ul>
-        </div>
       </div>
     </div>
   );
