@@ -39,7 +39,7 @@ export function ProductCard({ product }: { product: Product }) {
           {product.name}
         </h3>
         <Rating rating={product.rating} />
-        <p className="text-lg font-bold text-red-600 mt-1">
+        <p className="text-lg font-bold text-gray-800 mt-1">
           {product.price.toLocaleString('fr-FR')} FCFA
         </p>
       </div>
