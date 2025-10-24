@@ -17,9 +17,3 @@ export type Product = {
   warranty: string;
   delivery: string;
 };
-
-export type Category = {
-  name: string;
-  icon: LucideIcon;
-  gradient: string;
-};
