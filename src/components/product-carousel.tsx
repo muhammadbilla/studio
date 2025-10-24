@@ -3,7 +3,6 @@
 import * as React from 'react';
 import type { Product } from "@/lib/types";
 import { ProductCard } from "./product-card";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
 import {
   Carousel,
   CarouselContent,
@@ -28,18 +27,6 @@ export function ProductCarousel({ id, title, description, products }: ProductCar
             <h2 className="text-2xl sm:text-3xl font-bold font-headline text-foreground">{title}</h2>
             <p className="text-muted-foreground text-sm sm:text-base">{description}</p>
           </div>
-          <Select>
-            <SelectTrigger className="w-full sm:w-[180px]">
-              <SelectValue placeholder="Trier par" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="latest">Plus récents</SelectItem>
-              <SelectItem value="price-asc">Prix croissant</SelectItem>
-              <SelectItem value="price-desc">Prix décroissant</SelectItem>
-              <SelectItem value="best-selling">Meilleures ventes</SelectItem>
-              <SelectItem value="top-rated">Mieux notés</SelectItem>
-            </SelectContent>
-          </Select>
         </div>
         
         <Carousel
