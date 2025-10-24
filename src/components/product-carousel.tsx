@@ -4,6 +4,13 @@ import * as React from 'react';
 import type { Product } from "@/lib/types";
 import { ProductCard } from "./product-card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 interface ProductCarouselProps {
   id: string;
@@ -35,11 +42,24 @@ export function ProductCarousel({ id, title, description, products }: ProductCar
           </Select>
         </div>
         
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4">
-          {products.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
-        </div>
+        <Carousel
+          opts={{
+            align: "start",
+          }}
+          className="w-full"
+        >
+          <CarouselContent>
+            {products.map((product, index) => (
+              <CarouselItem key={index} className="basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
+                <div className="p-1">
+                  <ProductCard product={product} />
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="hidden sm:flex" />
+          <CarouselNext className="hidden sm:flex" />
+        </Carousel>
       </div>
     </section>
   );
