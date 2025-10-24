@@ -57,7 +57,7 @@
     {
       "id": "product-6",
       "description": "Coque Renforcée iPhone 15 Pro",
-      "imageUrl": "https://images.unsplash.com/photo-1565691249903-c24dcfa9a71d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxyZWluZm9yY2VkJTIwcGhvbmUlMjBjYXNlfGVufDB8fHx8MTc2MTI3NzA1OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1565691249903-c24dcfa9a71d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxyZWluZm9yY2VkJTIwcGhvbmUlMjBjYXNlfGVufDB8fHx8MTc2MTI3NzA1OHww&ixlibrb-4.1.0&q=80&w=1080",
       "imageHint": "reinforced phone case"
     },
     {
@@ -81,8 +81,140 @@
     {
       "id": "product-10",
       "description": "Coque Antichoc Military Grade",
-      "imageUrl": "https://images.unsplash.com/photo-1741061963569-9d0ef54d10d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c2hvY2twcm9vZiUyMHBob25lJTIwY2FzZXxlbnwwfHx8fDE3NjEyNzcwNTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1741061963569-9d0ef54d10d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c2hvY2twcm9vZiUyMHBob25lJTIwY2FzZXxlbnwwfHx8fDE3NjEyNzcwNTd8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "shockproof phone case"
+    },
+    {
+      "id": "product-11",
+      "description": "Samsung Galaxy S24 Ultra",
+      "imageUrl": "https://images.unsplash.com/photo-1572016047668-5b5e909e1605?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzbWFydHBob25lfGVufDB8fHx8MTc2MTI1MTM5MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "smartphone"
+    },
+    {
+      "id": "product-12",
+      "description": "Google Pixel 8 Pro",
+      "imageUrl": "https://images.unsplash.com/photo-1598826867442-9ef9e2527b1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzbWFydHBob25lfGVufDB8fHx8MTc2MTI1MTM5MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "smartphone"
+    },
+    {
+      "id": "product-13",
+      "description": "Xiaomi 14 Pro",
+      "imageUrl": "https://images.unsplash.com/photo-1592890288564-76628a30a657?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzbWFydHBob25lfGVufDB8fHx8MTc2MTI1MTM5MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "smartphone"
+    },
+    {
+      "id": "product-14",
+      "description": "Airpods Pro 2",
+      "imageUrl": "https://images.unsplash.com/photo-1591923271591-478bb32b57ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxlYXJidWRzJTIwd2lyZWxlc3N8ZW58MHx8fHwxNzYxMjk1OTQ3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "earbuds wireless"
+    },
+    {
+      "id": "product-15",
+      "description": "Sony WF-1000XM5",
+      "imageUrl": "https://images.unsplash.com/photo-1667178173387-7e0cb51c0b4f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxlYXJidWRzJTIwd2lyZWxlc3N8ZW58MHx8fHwxNzYxMjk1OTQ3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "earbuds wireless"
+    },
+    {
+      "id": "product-16",
+      "description": "Bose QuietComfort Ultra Earbuds",
+      "imageUrl": "https://images.unsplash.com/photo-1590658006821-04f4008d5717?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxlYXJidWRzJTIwd2lyZWxlc3N8ZW58MHx8fHwxNzYxMjk1OTQ3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "earbuds wireless"
+    },
+    {
+      "id": "product-17",
+      "description": "Samsung Galaxy Buds2 Pro",
+      "imageUrl": "https://images.unsplash.com/photo-1591923271591-478bb32b57ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxlYXJidWRzJTIwd2lyZWxlc3N8ZW58MHx8fHwxNzYxMjk1OTQ3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "earbuds wireless"
+    },
+    {
+      "id": "product-18",
+      "description": "Cable USB-C vers Lightning",
+      "imageUrl": "https://images.unsplash.com/photo-1572721546624-05bf65ad7679?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx1c2IlMjBjYWJsZXxlbnwwfHx8fDE3NjEyNDgzNTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "usb cable"
+    },
+    {
+      "id": "product-19",
+      "description": "Cable HDMI 2.1 8K",
+      "imageUrl": "https://images.unsplash.com/photo-1751846545116-838fe2e7e815?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxoZG1pJTIwY2FibGV8ZW58MHx8fHwxNzYxMjk1OTQ3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "hdmi cable"
+    },
+    {
+      "id": "product-20",
+      "description": "Chargeur Anker 100W",
+      "imageUrl": "https://images.unsplash.com/photo-1731616103600-3fe7ccdc5a59?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwaG9uZSUyMGNoYXJnZXJ8ZW58MHx8fHwxNzYxMjk1OTQ3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "phone charger"
+    },
+    {
+      "id": "product-21",
+      "description": "Hub USB-C 7-en-1",
+      "imageUrl": "https://images.unsplash.com/photo-1760462788271-2909bf082437?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dXNiJTIwaHVifGVufDB8fHx8MTc2MTIyNjA2MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "usb hub"
+    },
+    {
+      "id": "product-22",
+      "description": "Enceinte Bluetooth JBL Charge 5",
+      "imageUrl": "https://images.unsplash.com/photo-1589003077984-894e133dabab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxibHVldG9vdGglMjBzcGVha2VyfGVufDB8fHx8MTc2MTE5NzAxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bluetooth speaker"
+    },
+    {
+      "id": "product-23",
+      "description": "Enceinte connectée Sonos One",
+      "imageUrl": "https://images.unsplash.com/photo-1536571195711-1b796f9f9f7f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzbWFydCUyMHNwZWFrZXJ8ZW58MHx8fHwxNzYxMjg3NjM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "smart speaker"
+    },
+    {
+      "id": "product-24",
+      "description": "Barre de son Samsung HW-Q990C",
+      "imageUrl": "https://images.unsplash.com/photo-1516445034117-fcd56299761a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzb3VuZCUyMGJhcnxlbnwwfHx8fDE3NjEyOTU5NDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sound bar"
+    },
+    {
+      "id": "product-25",
+      "description": "Enceinte portable Bose SoundLink Flex",
+      "imageUrl": "https://images.unsplash.com/photo-1675319245480-215961c129f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwb3J0YWJsZSUyMHNwZWFrZXJ8ZW58MHx8fHwxNzYxMjU4MzEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "portable speaker"
+    },
+    {
+      "id": "product-26",
+      "description": "Dell XPS 15",
+      "imageUrl": "https://images.unsplash.com/photo-1555117391-6c0795768da8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxsYXB0b3AlMjBjb21wdXRlcnxlbnwwfHx8fDE3NjEyMTcwODR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "laptop computer"
+    },
+    {
+      "id": "product-27",
+      "description": "HP Spectre x360",
+      "imageUrl": "https://images.unsplash.com/photo-1661329815984-624a5b357b0d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxsYXB0b3AlMjBjb252ZXJ0aWJsZXxlbnwwfHx8fDE3NjEyOTU5NDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "laptop convertible"
+    },
+    {
+      "id": "product-28",
+      "description": "Razer Blade 16",
+      "imageUrl": "https://images.unsplash.com/photo-1640695254597-7ee90eed00fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Z2FtaW5nJTIwbGFwdG9wfGVufDB8fHx8MTc2MTIzMzUyNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "gaming laptop"
+    },
+    {
+      "id": "product-29",
+      "description": "Réfrigérateur connecté Samsung Family Hub",
+      "imageUrl": "https://images.unsplash.com/photo-1721987070934-d06654c35040?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzbWFydCUyMHJlZnJpZ2VyYXRvcnxlbnwwfHx8fDE3NjEyOTU5NDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "smart refrigerator"
+    },
+    {
+      "id": "product-30",
+      "description": "Aspirateur robot iRobot Roomba j7+",
+      "imageUrl": "https://images.unsplash.com/photo-1647940990395-967898eb0d65?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxyb2JvdCUyMHZhY3V1bXxlbnwwfHx8fDE3NjEyMTMzMzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "robot vacuum"
+    },
+    {
+      "id": "product-31",
+      "description": "Machine à café Nespresso Vertuo Next",
+      "imageUrl": "https://images.unsplash.com/photo-1496582490020-60c1344c64aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjb2ZmZWUlMjBtYWNoaW5lfGVufDB8fHx8MTc2MTIzODE1Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "coffee machine"
+    },
+    {
+      "id": "product-32",
+      "description": "Friteuse à air Philips Airfryer XXL",
+      "imageUrl": "https://images.unsplash.com/photo-1664993601157-de79e368f701?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhaXIlMjBmcnllcnxlbnwwfHx8fDE3NjEyODc3MjV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "air fryer"
     }
   ]
 }
