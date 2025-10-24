@@ -14,12 +14,12 @@ interface ProductCarouselProps {
 
 export function ProductCarousel({ id, title, description, products }: ProductCarouselProps) {
   return (
-    <section id={id} className="py-16">
+    <section id={id} className="py-8 sm:py-12">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col sm:flex-row justify-between sm:items-center mb-8 gap-4">
+        <div className="flex flex-col sm:flex-row justify-between sm:items-center mb-6 gap-4">
           <div>
-            <h2 className="text-3xl font-bold font-headline text-foreground">{title}</h2>
-            <p className="text-muted-foreground">{description}</p>
+            <h2 className="text-2xl sm:text-3xl font-bold font-headline text-foreground">{title}</h2>
+            <p className="text-muted-foreground text-sm sm:text-base">{description}</p>
           </div>
           <Select>
             <SelectTrigger className="w-full sm:w-[180px]">
@@ -35,7 +35,7 @@ export function ProductCarousel({ id, title, description, products }: ProductCar
           </Select>
         </div>
         
-        <div className="flex gap-4 md:gap-6 overflow-x-auto scrollbar-hide snap-x snap-mandatory scroll-smooth pb-4 -mx-4 px-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4">
           {products.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
