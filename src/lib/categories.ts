@@ -6,9 +6,10 @@ import {
     Speaker,
     Laptop,
     Refrigerator,
+    LucideIcon,
   } from "lucide-react";
 import type { Category } from "@/lib/types";
-  
+
 export const categories: Category[] = [
     { name: "Téléphonie", icon: Smartphone, gradient: "from-sky-400 to-sky-600" },
     { name: "Airpod", icon: Headphones, gradient: "from-blue-400 to-blue-600" },

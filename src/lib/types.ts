@@ -1,3 +1,5 @@
+import type { LucideIcon } from "lucide-react";
+
 export type Product = {
   id: string;
   name: string;
@@ -18,6 +20,6 @@ export type Product = {
 
 export type Category = {
   name: string;
-  icon: React.ComponentType<{ className?: string }>;
+  icon: LucideIcon;
   gradient: string;
 };

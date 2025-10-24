@@ -43,23 +43,26 @@ export function CategoryCarousel() {
             ref={scrollContainerRef}
             className="flex gap-4 md:gap-6 overflow-x-auto pb-4 scrollbar-hide snap-x snap-mandatory scroll-smooth px-4 lg:px-0"
           >
-            {categories.map((category) => (
-              <Link key={category.name} href={`/category/${slugify(category.name)}`} className="flex-shrink-0 snap-center">
-                <div className="flex flex-col items-center group">
-                  <div
-                    className={cn(
-                      "w-28 h-28 rounded-full flex items-center justify-center bg-gradient-to-br shadow-lg transition-all duration-300 ease-in-out group-hover:scale-110 group-hover:shadow-xl",
-                      category.gradient
-                    )}
-                  >
-                    <category.icon className="text-white h-12 w-12" />
+            {categories.map((category) => {
+              const Icon = category.icon;
+              return (
+                <Link key={category.name} href={`/category/${slugify(category.name)}`} className="flex-shrink-0 snap-center">
+                  <div className="flex flex-col items-center group">
+                    <div
+                      className={cn(
+                        "w-28 h-28 rounded-full flex items-center justify-center bg-gradient-to-br shadow-lg transition-all duration-300 ease-in-out group-hover:scale-110 group-hover:shadow-xl",
+                        category.gradient
+                      )}
+                    >
+                      <Icon className="text-white h-12 w-12" />
+                    </div>
+                    <span className="text-foreground text-sm font-semibold mt-4 text-center w-28">
+                      {category.name}
+                    </span>
                   </div>
-                  <span className="text-foreground text-sm font-semibold mt-4 text-center w-28">
-                    {category.name}
-                  </span>
-                </div>
-              </Link>
-            ))}
+                </Link>
+              );
+            })}
           </div>
           <Button
              variant="outline"
