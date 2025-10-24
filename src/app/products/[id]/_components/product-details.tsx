@@ -86,10 +86,6 @@ export function ProductDetails({ product }: { product: Product }) {
           <WhatsAppButton product={product} />
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
             <div className="flex items-center gap-2">
-              <ShieldCheck className="h-5 w-5 text-primary" />
-              <span className="text-muted-foreground">{product.warranty}</span>
-            </div>
-            <div className="flex items-center gap-2">
               <Truck className="h-5 w-5 text-primary" />
               <span className="text-muted-foreground">{product.delivery}</span>
             </div>
