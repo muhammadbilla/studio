@@ -20,7 +20,6 @@ export const products: Product[] = [
     ],
     warranty: "Garantie 3 mois",
     delivery: "Livraison rapide",
-    badge: "Prix imbattable",
   },
   {
     id: "34",
@@ -32,7 +31,6 @@ export const products: Product[] = [
     rating: 4.8,
     likes: 350,
     stock: "En stock",
-    badge: "Prix imbattable",
     imageIds: ["product-34"],
     specs: [
         "Réduction de bruit active",
@@ -62,7 +60,6 @@ export const products: Product[] = [
     ],
     warranty: "Garantie 3 mois",
     delivery: "Livraison rapide",
-    badge: "Prix imbattable",
   },
   {
     id: "36",
@@ -83,7 +80,6 @@ export const products: Product[] = [
     ],
     warranty: "Garantie 6 mois",
     delivery: "Livraison rapide",
-    badge: "Prix imbattable",
   },
   {
     id: "2",
@@ -96,7 +92,6 @@ export const products: Product[] = [
     rating: 4.9,
     likes: 245,
     stock: "En stock",
-    badge: "Nouveau",
     imageIds: ["product-2"],
     specs: [
       "Écran Super Retina XDR 6.7\"",
@@ -119,7 +114,6 @@ export const products: Product[] = [
     rating: 5,
     likes: 94,
     stock: "En stock",
-    badge: "-10%",
     imageIds: ["product-5"],
     specs: [
         "Écran Retina Always-On 45mm",
@@ -145,7 +139,6 @@ export const products: Product[] = [
     rating: 5,
     likes: 342,
     stock: "En stock",
-    badge: "-25%",
     imageIds: ["product-6"],
     specs: [
       "Dos en verre trempé 9H",
@@ -168,7 +161,6 @@ export const products: Product[] = [
     rating: 4.5,
     likes: 198,
     stock: "En stock",
-    badge: "Nouveau",
     imageIds: ["product-7"],
     specs: [
       "Impression HD haute définition",
@@ -192,7 +184,6 @@ export const products: Product[] = [
     rating: 4,
     likes: 276,
     stock: "En stock",
-    badge: "-15%",
     imageIds: ["product-8"],
     specs: [
       "TPU transparent premium",
@@ -238,7 +229,6 @@ export const products: Product[] = [
     rating: 4.5,
     likes: 431,
     stock: "En stock",
-    badge: "-30%",
     imageIds: ["product-10"],
     specs: [
       "Certification MIL-STD-810G",
@@ -261,7 +251,6 @@ export const products: Product[] = [
     rating: 4.8,
     likes: 150,
     stock: "En stock",
-    badge: "IA",
     imageIds: ["product-11"],
     specs: ["Écran Dynamic AMOLED 2X 6.8\"", "Processeur Snapdragon 8 Gen 3", "Appareil photo 200MP", "S Pen intégré"],
     warranty: "Garantie 2 ans",
@@ -277,7 +266,6 @@ export const products: Product[] = [
     rating: 4.7,
     likes: 120,
     stock: "En stock",
-    badge: "Google AI",
     imageIds: ["product-12"],
     specs: ["Écran Super Actua 6.7\"", "Processeur Google Tensor G3", "Triple appareil photo 50MP", "VPN par Google One inclus"],
     warranty: "Garantie 2 ans",
@@ -398,7 +386,6 @@ export const products: Product[] = [
     rating: 4.9,
     likes: 180,
     stock: "En stock",
-    badge: "Puissant",
     imageIds: ["product-20"],
     specs: ["Puissance 100W", "Technologie GaNPrime", "3 ports USB-C, 1 port USB-A", "ActiveShield 2.0 pour la sécurité"],
     warranty: "Garantie 18 mois",
@@ -459,7 +446,6 @@ export const products: Product[] = [
     rating: 5,
     likes: 90,
     stock: "En stock",
-    badge: "Cinéma",
     imageIds: ["product-24"],
     specs: ["11.1.4 canaux", "Dolby Atmos sans fil", "Q-Symphony", "SpaceFit Sound Pro"],
     warranty: "Garantie 2 ans",
@@ -520,7 +506,6 @@ export const products: Product[] = [
     rating: 4.9,
     likes: 85,
     stock: "En stock",
-    badge: "Gaming Ultime",
     imageIds: ["product-28"],
     specs: ["Intel Core i9-14900HX", "NVIDIA RTX 4090", "Écran bi-mode Mini-LED (4K 120Hz/FHD+ 240Hz)", "Chambre à vapeur"],
     warranty: "Garantie 2 ans",
@@ -581,7 +566,6 @@ export const products: Product[] = [
     rating: 4.9,
     likes: 350,
     stock: "En stock",
-    badge: "Best-seller",
     imageIds: ["product-32"],
     specs: ["Technologie Rapid Air", "Capacité XXL (1.4kg)", "Technologie Fat Removal", "Écran digital avec 5 programmes"],
     warranty: "Garantie 2 ans",
