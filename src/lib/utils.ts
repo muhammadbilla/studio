@@ -9,11 +9,13 @@ export function slugify(text: string) {
   return text
     .toString()
     .toLowerCase()
-    .replace(/\s+/g, '-') // Replace spaces with -
-    .replace(/[^\w-]+/g, '') // Remove all non-word chars
-    .replace(/--+/g, '-') // Replace multiple - with single -
-    .replace(/^-+/, '') // Trim - from start of text
-    .replace(/-+$/, ''); // Trim - from end of text
+    .normalize("NFD") // Normalise les caractères pour séparer les accents
+    .replace(/[\u0300-\u036f]/g, "") // Supprime les accents
+    .replace(/\s+/g, '-') // Remplace les espaces par -
+    .replace(/[^\w-]+/g, '') // Supprime les caractères non-alphanumériques
+    .replace(/--+/g, '-') // Remplace plusieurs - par un seul
+    .replace(/^-+/, '') // Supprime - au début
+    .replace(/-+$/, ''); // Supprime - à la fin
 }
 
 export function unslugify(slug: string) {
