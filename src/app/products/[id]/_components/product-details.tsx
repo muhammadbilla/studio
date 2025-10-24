@@ -8,7 +8,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Badge } from "@/components/ui/badge";
-import { Star, StarHalf, ShieldCheck, Truck } from "lucide-react";
+import { Star, StarHalf, ShieldCheck, Truck, Store } from "lucide-react";
 import { WhatsAppButton } from "./whatsapp-button";
 import { getImageById } from "@/lib/placeholder-images";
 import { Separator } from "@/components/ui/separator";
@@ -87,7 +87,11 @@ export function ProductDetails({ product }: { product: Product }) {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
             <div className="flex items-center gap-2">
               <Truck className="h-5 w-5 text-primary" />
-              <span className="text-muted-foreground">{product.delivery}</span>
+              <span className="text-muted-foreground">Livraison rapide</span>
+            </div>
+             <div className="flex items-center gap-2">
+              <Store className="h-5 w-5 text-primary" />
+              <span className="text-muted-foreground">Retrait en magasin</span>
             </div>
           </div>
         </div>
