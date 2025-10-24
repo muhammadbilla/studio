@@ -6,7 +6,7 @@ import { Footer } from '@/components/footer';
 import { products } from '@/lib/products';
 
 export default function Home() {
-  const featuredProducts = products.filter(p => ['Informatique', 'Téléphonie', 'Gaming', 'Image & Son', 'Wearables'].includes(p.category)).slice(0, 5);
+  const featuredProducts = products.filter(p => ["33", "34", "35", "36"].includes(p.id));
   const phoneCases = products.filter(p => p.category === 'Coque de téléphone');
   const telephones = products.filter(p => p.category === 'Téléphonie').slice(0, 4);
   const airpods = products.filter(p => p.category === 'Airpod').slice(0, 4);

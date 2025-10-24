@@ -165,7 +165,7 @@
     {
       "id": "product-24",
       "description": "Barre de son Samsung HW-Q990C",
-      "imageUrl": "https://images.unsplash.com/photo-1516445034117-fcd56299761a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzb3VuZCUyMGJhcnxlbnwwfHx8fDE3NjEyOTU5NDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1516445034117-fcd56299761a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzb3VuZCUyMGJhcnxlbnwwfHx8fDE3NjEyOTU5NDd8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "sound bar"
     },
     {
@@ -215,6 +215,30 @@
       "description": "Friteuse à air Philips Airfryer XXL",
       "imageUrl": "https://images.unsplash.com/photo-1664993601157-de79e368f701?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhaXIlMjBmcnllcnxlbnwwfHx8fDE3NjEyODc3MjV8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "air fryer"
+    },
+    {
+      "id": "product-33",
+      "description": "Image d'une coque en silicone",
+      "imageUrl": "https://images.unsplash.com/photo-1574683189522-9c5a95f78b76?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzaWxpY29uZSUyMGNhc2V8ZW58MHx8fHwxNzYxMzIxOTMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "silicone case"
+    },
+    {
+      "id": "product-34",
+      "description": "Image d'AirPods Pro",
+      "imageUrl": "https://images.unsplash.com/photo-1624258919367-5dc28f5dc293?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhaXJwb2RzJTIwcHJvfGVufDB8fHx8MTc2MTI4OTg3MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "airpods pro"
+    },
+    {
+      "id": "product-35",
+      "description": "Image d'un câble iPhone",
+      "imageUrl": "https://images.unsplash.com/photo-1587037542794-6ca5f4772330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxpcGhvbmUlMjBjYWJsZXxlbnwwfHx8fDE3NjEzMjE5MzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "iphone cable"
+    },
+    {
+      "id": "product-36",
+      "description": "Image d'un écran d'iPhone XR",
+      "imageUrl": "https://images.unsplash.com/photo-1611174895360-53948c735c3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxpcGhvbmUlMjBzY3JlZW58ZW58MHx8fHwxNzYxMzIxOTMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "iphone screen"
     }
   ]
 }
