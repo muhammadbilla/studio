@@ -8,7 +8,7 @@ import { categories as allCategories} from '@/lib/categories';
 import { slugify, unslugify } from '@/lib/utils';
 
 export async function generateStaticParams() {
-  const categorySlugs = allCategories.map(c => slugify(c.name));
+  const categorySlugs = allCategories.map(c => slugify(c));
   return categorySlugs.map((slug) => ({
     slug,
   }));
@@ -16,7 +16,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   const categoryName = unslugify(params.slug);
-  const categoryExists = allCategories.some(c => c.name.toLowerCase() === categoryName.toLowerCase());
+  const categoryExists = allCategories.some(c => c.toLowerCase() === categoryName.toLowerCase());
 
   if (!categoryExists) {
     return {
@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 export default function CategoryPage({ params }: { params: { slug: string } }) {
   const categoryName = unslugify(params.slug);
   
-  const categoryDetails = allCategories.find(c => c.name.toLowerCase() === categoryName.toLowerCase());
+  const categoryDetails = allCategories.find(c => c.toLowerCase() === categoryName.toLowerCase());
 
   if (!categoryDetails) {
     notFound();
@@ -49,7 +49,7 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
       <main className="flex-grow py-8 sm:py-16">
         <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-                <h1 className="text-4xl sm:text-5xl font-bold font-headline text-foreground">{categoryDetails.name}</h1>
+                <h1 className="text-4xl sm:text-5xl font-bold font-headline text-foreground">{categoryDetails}</h1>
                 <p className="text-muted-foreground mt-2 text-lg">Découvrez notre sélection de produits</p>
             </div>
           {categoryProducts.length > 0 ? (
