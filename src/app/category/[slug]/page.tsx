@@ -4,7 +4,6 @@ import { ProductCard } from '@/components/product-card';
 import { products } from '@/lib/products';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
-import { products as allProducts } from '@/lib/products';
 import { categories as allCategories} from '@/lib/categories';
 import { slugify, unslugify } from '@/lib/utils';
 
@@ -34,20 +33,16 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 export default function CategoryPage({ params }: { params: { slug: string } }) {
   const categoryName = unslugify(params.slug);
   
-  const categoryProducts = products.filter(
-    (product) => product.category.toLowerCase() === categoryName.toLowerCase()
-  );
-
   const categoryDetails = allCategories.find(c => c.name.toLowerCase() === categoryName.toLowerCase());
 
   if (!categoryDetails) {
-    // This check is important if a slug exists but the category name matching fails for some reason
     notFound();
   }
-  
-  // We still show the page even if there are no products, just the title and description.
-  // The check for categoryProducts.length === 0 is removed from the notFound condition.
 
+  const categoryProducts = products.filter(
+    (product) => product.category.toLowerCase() === categoryName.toLowerCase()
+  );
+  
   return (
     <div className="flex flex-col min-h-screen bg-background">
       <Header />
