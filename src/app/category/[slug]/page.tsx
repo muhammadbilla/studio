@@ -17,7 +17,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   const categoryName = unslugify(params.slug);
-  const categoryExists = [...new Set(products.map(p => p.category.toLowerCase()))].includes(categoryName.toLowerCase());
+  const categoryExists = [...new Set(products.map(p => slugify(p.category)))].includes(params.slug);
 
   if (!categoryExists) {
     return {
@@ -34,14 +34,14 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 export default function CategoryPage({ params }: { params: { slug: string } }) {
   const categoryName = unslugify(params.slug);
   
-  const categoryExists = [...new Set(products.map(p => p.category.toLowerCase()))].includes(categoryName.toLowerCase());
+  const categoryExists = [...new Set(products.map(p => slugify(p.category)))].includes(params.slug);
 
   if (!categoryExists) {
     notFound();
   }
 
   const categoryProducts = products.filter(
-    (product) => product.category.toLowerCase() === categoryName.toLowerCase()
+    (product) => slugify(product.category) === params.slug
   );
   
   return (
